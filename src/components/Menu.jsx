@@ -7,7 +7,8 @@ function Menu() {
 
   useEffect(function () {
     async function fetchdata() {
-      const res = await fetch("/data/data.json");
+      const res = await fetch(`${process.env.PUBLIC_URL}/data/data.json`);
+
       const data = await res.json();
       setPlates(data);
     }
