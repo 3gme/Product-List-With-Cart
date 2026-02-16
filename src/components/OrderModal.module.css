@@ -1,0 +1,110 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  width: 450px;
+  border-radius: 16px;
+  padding: 2rem;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background: #d1fae5;
+  color: #059669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.items {
+  background: #f9f5f3;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.info {
+  flex: 1;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.itemTotal {
+  font-weight: 600;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 999px;
+  background: #c2410c;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: #9a3412;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

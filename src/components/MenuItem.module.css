@@ -1,0 +1,42 @@
+.image {
+  position: relative;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 3px;
+}
+
+.text :nth-child(1) {
+  color: var(--Rose-400);
+  font-size: 14px;
+}
+
+.text :nth-child(2) {
+  color: var(--Rose-900);
+  font-size: 16px;
+}
+
+.text :nth-child(3) {
+  color: var(--Red);
+  font-size: 14px;
+
+  span {
+    color: var(--Red);
+    font-size: 15px;
+  }
+}
+
+.activeBorder {
+  border: 1.7px solid var(--Red)
+}
